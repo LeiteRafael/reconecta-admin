@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . '/../autoload.php';
 require_once __DIR__ . '/../routes.php';
 ?>
 <!DOCTYPE html>
@@ -12,7 +13,6 @@ require_once __DIR__ . '/../routes.php';
 </head>
 
 <body>
-
 </body>
 
 </html>

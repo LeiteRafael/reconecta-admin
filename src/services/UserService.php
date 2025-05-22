@@ -1,7 +1,4 @@
 <?php
-require_once __DIR__ . '/../model/User.php';
-require_once __DIR__ . '/../../config/database/database.php';
-
 class UserService
 {
     private $db;
@@ -13,7 +10,7 @@ class UserService
 
     public function getAllUsers()
     {
-        $stmt = $this->db->query('SELECT * FROM users');
+        $stmt = $this->db->query('SELECT * FROM users'); // Transformar em uma repository
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 

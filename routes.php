@@ -1,6 +1,4 @@
 <?php
-require_once __DIR__ . '/src/controllers/UserController.php';
-
 $controller = new UserController();
 
 $action = $_GET['action'] ?? 'index';

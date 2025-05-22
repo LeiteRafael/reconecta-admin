@@ -1,6 +1,4 @@
 <?php
-require_once __DIR__ . '/../services/UserService.php';
-
 class UserController
 {
     private $userService;
@@ -13,8 +11,9 @@ class UserController
     public function index()
     {
         $users = $this->userService->getAllUsers();
-        require __DIR__ . '/../views/user_list.php';
-        require __DIR__ . '/../views/form.php';
+        require __DIR__ . '/../views/UserList.php';
+        require __DIR__ . '/../views/Form.php';
+        // criar um render para isso aqui
     }
 
     public function store()
